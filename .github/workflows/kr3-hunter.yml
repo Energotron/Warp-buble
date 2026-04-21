@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       per_query:
-        description: "How many repositories to fetch per query (advisory)"
+        description: "How many repositories to fetch per query"
         required: false
         default: "15"
   schedule:
@@ -28,6 +28,7 @@ jobs:
       - name: Run agent pipeline
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PER_QUERY: ${{ github.event.inputs.per_query || '15' }}
         run: |
           python scripts/run_agents.py
 
