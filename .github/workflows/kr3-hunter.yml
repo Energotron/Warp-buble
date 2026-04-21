@@ -1,0 +1,50 @@
+name: KR3 Similar Games Hunter
+
+on:
+  workflow_dispatch:
+    inputs:
+      per_query:
+        description: "How many repositories to fetch per query (advisory)"
+        required: false
+        default: "15"
+  schedule:
+    - cron: '17 7 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  scout-semantic-ranker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run agent pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/run_agents.py
+
+      - name: Upload raw candidates
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-candidates
+          path: out/raw_candidates.json
+
+      - name: Upload scored candidates
+        uses: actions/upload-artifact@v4
+        with:
+          name: scored-candidates
+          path: out/scored_candidates.json
+
+      - name: Upload markdown report
+        uses: actions/upload-artifact@v4
+        with:
+          name: kr3-report
+          path: out/report.md
