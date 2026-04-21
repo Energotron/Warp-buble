@@ -7,8 +7,6 @@ on:
         description: "How many repositories to fetch per query"
         required: false
         default: "15"
-  schedule:
-    - cron: '*/5 * * * *'
 
 permissions:
   contents: read
