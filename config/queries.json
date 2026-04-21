@@ -1,0 +1,57 @@
+{
+  "queries": [
+    "\"Space Rangers\" inspired game",
+    "\"Space Rangers\" clone",
+    "\"Space Rangers\" remake",
+    "\"Космические рейнджеры\" игра",
+    "\"Космические рейнджеры\" remake",
+    "space sandbox RPG trading factions text quests",
+    "galaxy sandbox RPG procedural quests",
+    "space trading game factions story-rich",
+    "open source space RPG text quest",
+    "space game inspired by Space Rangers"
+  ],
+  "weights": {
+    "name_match": 2,
+    "description_match": 2,
+    "readme_match": 3,
+    "topic_match": 1,
+    "recent_activity": 2,
+    "playability_signals": 2,
+    "engine_signal": 1,
+    "archived_penalty": -3
+  },
+  "keywords": {
+    "core": [
+      "space rangers",
+      "космические рейнджеры",
+      "sandbox",
+      "space",
+      "galaxy",
+      "trading",
+      "faction",
+      "quest",
+      "rpg",
+      "strategy",
+      "open world",
+      "procedural"
+    ],
+    "playability": [
+      "demo",
+      "playable",
+      "release",
+      "prototype",
+      "build",
+      "steam",
+      "itch",
+      "indiedb"
+    ],
+    "engine": [
+      "unity",
+      "godot",
+      "unreal",
+      "gamemaker",
+      "monogame"
+    ]
+  }
+}
