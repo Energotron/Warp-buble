@@ -13,6 +13,7 @@ from pathlib import Path
 API = "https://api.github.com"
 TOKEN = os.getenv("GITHUB_TOKEN", "")
 REPO = os.getenv("GITHUB_REPOSITORY", "")
+PER_QUERY = int(os.getenv("PER_QUERY", "15"))
 OUT = Path("out")
 OUT.mkdir(exist_ok=True)
 
@@ -32,12 +33,6 @@ def gh_get(url):
     with urllib.request.urlopen(req, timeout=30) as resp:
         data = resp.read().decode("utf-8")
         return json.loads(data)
-
-
-def gh_get_text(url):
-    req = urllib.request.Request(url, headers=headers("application/vnd.github.raw+json"))
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8", errors="ignore")
 
 
 def search_repositories(query, per_page=20):
@@ -185,7 +180,7 @@ def main():
     raw = []
     for query in cfg["queries"]:
         try:
-            repos = search_repositories(query, per_page=15)
+            repos = search_repositories(query, per_page=PER_QUERY)
         except Exception as e:
             print(f"search failed for {query}: {e}", file=sys.stderr)
             continue
