@@ -1,21 +1,22 @@
-# KR3 Hunter
+# QuantDeus Mission OS
 
-GitHub Actions pipeline for scouting games, fan projects, remakes, and spiritual successors inspired by **Space Rangers / Космические рейнджеры**.
+A lightweight multi-agent command layer for research scouting, knowledge capture, analysis, project management, outreach, and funding coordination.
 
-## What it does
-- searches GitHub repositories by RU/EN query packs
-- enriches results with repository metadata
-- scores candidates by similarity signals
-- generates a Markdown report and JSON datasets
-- uploads artifacts on every run
+## What is included
+- `src/quantdeus/`: runnable Python package
+- `prompts/`: prompt templates for each agent
+- `.github/workflows/mission-os.yml`: scheduled orchestration stub
+- `QuantDeus_Mission_OS.md`: strategy/spec document
 
-## Run
-Use the **KR3 Similar Games Hunter** workflow from the Actions tab.
+## Local run
+```bash
+python -m quantdeus.main --once
+```
 
-## Outputs
-- `out/raw_candidates.json`
-- `out/scored_candidates.json`
-- `out/report.md`
+## Environment variables
+- `OPENAI_API_KEY` or any provider-specific key you wire in
+- `MISSION_OS_MODE=mock|live`
+- `MISSION_OS_STATE_DIR=.state`
 
 ## Notes
-This pipeline is GitHub-centric by default. It can be extended later with external sources via scheduled crawlers or APIs.
+This repo is intentionally structured as a deployable scaffold. Replace the mock LLM adapter with your preferred provider, then connect schedulers, storage, and notification channels.
