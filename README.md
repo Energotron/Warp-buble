@@ -7,6 +7,10 @@ A lightweight multi-agent command layer for research scouting, knowledge capture
 - `prompts/`: prompt templates for each agent
 - `.github/workflows/mission-os.yml`: scheduled orchestration stub
 - `QuantDeus_Mission_OS.md`: strategy/spec document
+- `research/modified-gravity/`: durable archive for significant results accepted by the hourly Modified Gravity Watch
+
+## Research automation
+The ChatGPT automation `Modified Gravity Watch` runs hourly under the installed `modified-gravity-research-watcher` skill. Significant accepted developments are committed to `research/modified-gravity/reports/` and indexed in `research/modified-gravity/INDEX.md`; non-significant runs produce no research commit.
 
 ## Local run
 ```bash
