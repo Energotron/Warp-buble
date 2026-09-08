@@ -1,26 +1,27 @@
 # Modified Gravity Watch Context
 
 ## Last accepted run
-- Local time: 2026-09-08 04:09 +03:00
-- Repository base before run: `e77572fc2e7fac957b16e10daab6c3a043c8c3f5`
-- Latest accepted report commit: `17a2277131ad04cf88956c546472bc16500241b2`
-- Latest index commit: `b0ca6a2012b8a003111d6c6f97b12f55fefd86cb`
+- Local time: 2026-09-08 11:27 +03:00
+- Repository base before run: `6793998bca4fcd507c0df037881697346edf797f`
+- Latest accepted report commit: `f44e4da581968580159de4b9982202588583d933`
+- Latest index commit: `40b7a2013f83af2e634c85b3d343af32f91edeeb`
 
 ## Accepted development
-- arXiv:2609.04112v1 — *Consistency between cosmological and standard siren observations in evolving dark energy*
-- Classification: observation-facing model test / scalar-tensor modified gravity / non-minimal coupling / gravitational-wave propagation / standard sirens
-- Status: significant primary preprint; not yet peer reviewed
-- Core result: the cosmology-favored non-minimally coupled scalar-tensor model predicts `α_M(0)=-0.76^{+0.37}_{-0.42}`, a GW/EM luminosity-distance ratio falling to about `0.88` by `z~1.5`, and phenomenological projections `c_M=-0.5±0.2`, `(Xi_0,n)=(0.88±0.05,3.2±0.3)`. Current GWTC-5 modified-propagation constraints are consistent with both this prediction and GR, but if the NMC signal is real and standard-siren inference assumes GR, the recovered `H0` can be biased high by roughly `2.8–5.9 km s^-1 Mpc^-1` in the paper's comparisons, comparable to the Hubble-tension scale. The work also shows that rigid `α_M∝Ω_Λ` phenomenological fits can impose a gradient-instability sign restriction that does not faithfully represent the viable NMC theory trajectory.
-- Source: https://arxiv.org/abs/2609.04112
+- arXiv:2609.04966v1 — *Static Spherically Symmetric Solutions in Modified Entropic Gravity*
+- Classification: theory / model / modified entropic gravity / static spherical solutions / weak-field phenomenology
+- Status: significant peer-reviewed journal result; International Journal of Modern Physics D (2026) 2650049; DOI `10.1142/S0218271826500495`
+- Core result: in the studied temperature-corrected entropic-gravity construction, exact `f(T) ∝ T^2` forces the static spherically symmetric geometry to flat Minkowski spacetime. Small departures from quadratic scaling restore a nontrivial field and generate a logarithmic correction to the Newtonian potential, making long-range weak-field dynamics a primary falsification channel. The result exposes a constitutive-law degeneracy: a natural-looking microscopic response can remove gravity rather than merely perturb it.
+- Source: https://arxiv.org/abs/2609.04966
+- DOI: https://doi.org/10.1142/S0218271826500495
 
 ## Deduplication anchors
-Previously accepted entries include: NMC standard-siren GW-friction signature and H0 inference bias; metric `f(R)` shear-free constraint-closure/GW-sector no-go; Gravity-from-Entropy generic-FLRW tensor hyperbolicity obstruction; quadratic `f(R)` screened scalar-hair weak-lensing cancellation; symmetric-teleparallel four-derivative spin-two ghost constraint; Galileon EFT nonlinear regularization/screening; sound-horizon-free Hubble-tension synthesis; ESGB cosmological constraint on hairy PBHs; nonpolynomial-gravity frozen neutron stars; GLPV static-hair stability obstruction; kSZ inverse-square force-law test; non-minimal gravity-matter coupling cosmology; stable cosmological cubic-Galileon hair; gravitational EFT UV locality; scalar fluxes for generic Kerr orbits; torsion/nonmetricity neutron-spin bounds; dCS pulsar-glitch birefringence; beyond-Horndeski primary-hair ringdown; curvature-coupled EMRI dephasing; wave-optics GW lensing in modified gravity; sGB gravitational memory.
+Previously accepted entries include: modified-entropic-gravity quadratic-temperature flat-locus/logarithmic weak-field tail; NMC standard-siren GW-friction signature and H0 inference bias; metric `f(R)` shear-free constraint-closure/GW-sector no-go; Gravity-from-Entropy generic-FLRW tensor hyperbolicity obstruction; quadratic `f(R)` screened scalar-hair weak-lensing cancellation; symmetric-teleparallel four-derivative spin-two ghost constraint; Galileon EFT nonlinear regularization/screening; sound-horizon-free Hubble-tension synthesis; ESGB cosmological constraint on hairy PBHs; nonpolynomial-gravity frozen neutron stars; GLPV static-hair stability obstruction; kSZ inverse-square force-law test; non-minimal gravity-matter coupling cosmology; stable cosmological cubic-Galileon hair; gravitational EFT UV locality; scalar fluxes for generic Kerr orbits; torsion/nonmetricity neutron-spin bounds; dCS pulsar-glitch birefringence; beyond-Horndeski primary-hair ringdown; curvature-coupled EMRI dephasing; wave-optics GW lensing in modified gravity; sGB gravitational memory.
 
 ## Public-roadmap relevance
-No direct QuantDeus roadmap change is warranted. Provenance-linked takeaway for later integration: modified-gravity / warp-adjacent candidates should be evaluated through a combined chain of background fit, gravitational-wave propagation law, and inference bias. Source: https://arxiv.org/abs/2609.04112
+No direct QuantDeus roadmap change is warranted. Provenance-linked takeaway for later integration: entropic/emergent gravity candidates should be screened for constitutive-law degeneracy, long-range weak-field tails, and dynamical stability before being promoted as warp-adjacent geometry mechanisms. Source: https://arxiv.org/abs/2609.04966
 
 ## Next verification question
-Does a fully joint NMC fit to cosmological background data and GWTC-5 standard sirens, allowing the expansion history and GW-friction function to vary self-consistently, preserve the model's preference over GR/`ΛCDM` and the predicted negative `α_M` trajectory without prior-driven bias?
+What coefficient range for the logarithmic potential survives Solar-System, wide-binary, galactic-rotation, and weak-lensing constraints, and does any surviving parameter region remain dynamically stable when the static solution is perturbed?
 
 ## Next-run rule
-Read this checkpoint plus the current `main` branch and `research/modified-gravity/INDEX.md` before searching. Fresh repository state has priority over this file. Reject duplicates, low-significance preprints, cosmetic model variations, and results outside modified-gravity / warp-relevant gravity unless they materially change model selection or observational strategy.
+Read this checkpoint plus the current `main` branch and `research/modified-gravity/INDEX.md` before searching. Fresh repository state has priority over this file. Reject duplicates, low-significance preprints, cosmetic model variations, and results outside modified-gravity / warp-relevant gravity unless they materially change model selection, consistency conditions, or observational strategy.
