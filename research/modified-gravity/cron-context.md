@@ -1,26 +1,26 @@
 # Modified Gravity Watch Context
 
 ## Last accepted run
-- Local time: 2026-09-08 03:13 +03:00
-- Repository base before run: `da476af17044737820f2e4fa1e706a9806c31438`
-- Latest accepted report commit: `f1d996228d0bfe1816ea4d5e4ca68e8c5b01ba31`
-- Latest index commit: `cc97e246948ca79112539ad21b133e67a21c3b44`
+- Local time: 2026-09-08 04:09 +03:00
+- Repository base before run: `e77572fc2e7fac957b16e10daab6c3a043c8c3f5`
+- Latest accepted report commit: `17a2277131ad04cf88956c546472bc16500241b2`
+- Latest index commit: `b0ca6a2012b8a003111d6c6f97b12f55fefd86cb`
 
 ## Accepted development
-- arXiv:2609.03260v1 — *Constraint closure and gravitational-wave content of shear-free cosmologies in metric f(R) gravity*
-- Classification: theory / model-consistency / metric f(R) gravity / cosmological perturbations / gravitational-wave propagation
+- arXiv:2609.04112v1 — *Consistency between cosmological and standard siren observations in evolving dark energy*
+- Classification: observation-facing model test / scalar-tensor modified gravity / non-minimal coupling / gravitational-wave propagation / standard sirens
 - Status: significant primary preprint; not yet peer reviewed
-- Core result: exact shear-freeness in linear metric `f(R)` FLRW perturbations removes the independent TT electric/magnetic Weyl pair, so ordinary `+`/`×` tensor GWs do not survive in that sector. The scalaron survives kinematically but must satisfy the full recursively generated temporal constraint-closure hierarchy; in the geodesic, spatially flat expanding de Sitter patch every nonzero fixed comoving scalar harmonic is excluded, including the healthy `R+αR²-2Λ` model with `α,Λ>0`. For positive-density barotropic matter with `f'(R)>0` and `1+w>0`, the vector global-eigenvalue condition has the wrong sign for regular harmonics; earlier coasting `R^n` counterexamples evade the obstruction only on unhealthy `f'<0` or `f''<0` branches.
-- Source: https://arxiv.org/abs/2609.03260
+- Core result: the cosmology-favored non-minimally coupled scalar-tensor model predicts `α_M(0)=-0.76^{+0.37}_{-0.42}`, a GW/EM luminosity-distance ratio falling to about `0.88` by `z~1.5`, and phenomenological projections `c_M=-0.5±0.2`, `(Xi_0,n)=(0.88±0.05,3.2±0.3)`. Current GWTC-5 modified-propagation constraints are consistent with both this prediction and GR, but if the NMC signal is real and standard-siren inference assumes GR, the recovered `H0` can be biased high by roughly `2.8–5.9 km s^-1 Mpc^-1` in the paper's comparisons, comparable to the Hubble-tension scale. The work also shows that rigid `α_M∝Ω_Λ` phenomenological fits can impose a gradient-instability sign restriction that does not faithfully represent the viable NMC theory trajectory.
+- Source: https://arxiv.org/abs/2609.04112
 
 ## Deduplication anchors
-Previously accepted entries include: metric `f(R)` shear-free constraint-closure/GW-sector no-go; Gravity-from-Entropy generic-FLRW tensor hyperbolicity obstruction; quadratic `f(R)` screened scalar-hair weak-lensing cancellation; symmetric-teleparallel four-derivative spin-two ghost constraint; Galileon EFT nonlinear regularization/screening; sound-horizon-free Hubble-tension synthesis; ESGB cosmological constraint on hairy PBHs; nonpolynomial-gravity frozen neutron stars; GLPV static-hair stability obstruction; kSZ inverse-square force-law test; non-minimal gravity-matter coupling cosmology; stable cosmological cubic-Galileon hair; gravitational EFT UV locality; scalar fluxes for generic Kerr orbits; torsion/nonmetricity neutron-spin bounds; dCS pulsar-glitch birefringence; beyond-Horndeski primary-hair ringdown; curvature-coupled EMRI dephasing; wave-optics GW lensing in modified gravity; sGB gravitational memory.
+Previously accepted entries include: NMC standard-siren GW-friction signature and H0 inference bias; metric `f(R)` shear-free constraint-closure/GW-sector no-go; Gravity-from-Entropy generic-FLRW tensor hyperbolicity obstruction; quadratic `f(R)` screened scalar-hair weak-lensing cancellation; symmetric-teleparallel four-derivative spin-two ghost constraint; Galileon EFT nonlinear regularization/screening; sound-horizon-free Hubble-tension synthesis; ESGB cosmological constraint on hairy PBHs; nonpolynomial-gravity frozen neutron stars; GLPV static-hair stability obstruction; kSZ inverse-square force-law test; non-minimal gravity-matter coupling cosmology; stable cosmological cubic-Galileon hair; gravitational EFT UV locality; scalar fluxes for generic Kerr orbits; torsion/nonmetricity neutron-spin bounds; dCS pulsar-glitch birefringence; beyond-Horndeski primary-hair ringdown; curvature-coupled EMRI dephasing; wave-optics GW lensing in modified gravity; sGB gravitational memory.
 
 ## Public-roadmap relevance
-No direct QuantDeus roadmap change is warranted. Provenance-linked takeaway for later integration: modified-gravity / warp-adjacent backgrounds should pass not only field-equation and characteristic-cone tests but also full perturbative constraint closure and global mode admissibility. Source: https://arxiv.org/abs/2609.03260
+No direct QuantDeus roadmap change is warranted. Provenance-linked takeaway for later integration: modified-gravity / warp-adjacent candidates should be evaluated through a combined chain of background fit, gravitational-wave propagation law, and inference bias. Source: https://arxiv.org/abs/2609.04112
 
 ## Next verification question
-Do causal imperfect-fluid sectors, anisotropic backgrounds, or relaxed shear conditions restore nontrivial scalar/vector/tensor propagation in viable `f(R)` branches without reintroducing ghost/gradient instabilities or pathological global harmonics?
+Does a fully joint NMC fit to cosmological background data and GWTC-5 standard sirens, allowing the expansion history and GW-friction function to vary self-consistently, preserve the model's preference over GR/`ΛCDM` and the predicted negative `α_M` trajectory without prior-driven bias?
 
 ## Next-run rule
 Read this checkpoint plus the current `main` branch and `research/modified-gravity/INDEX.md` before searching. Fresh repository state has priority over this file. Reject duplicates, low-significance preprints, cosmetic model variations, and results outside modified-gravity / warp-relevant gravity unless they materially change model selection or observational strategy.
