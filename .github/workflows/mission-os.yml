@@ -3,7 +3,7 @@ name: QuantDeus Mission OS
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '37 */4 * * *'
 
 jobs:
   mission-cycle:
